@@ -28,7 +28,7 @@ function App() {
         <Header />
         <main className="mt-20 md:mt-20 px-4 md:px-16 py-4 w-full">
           <Routes>
-            <Route path="/*" element={<MainContainer />} />
+            <Route exact path="/fooddelivery" element={<MainContainer />} />
             <Route path="/createItem" element={<CreateContainer />} />
           </Routes>
         </main>
