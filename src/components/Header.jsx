@@ -50,7 +50,7 @@ import { useStateValue } from "../context/StateProvider";
       <div className="hidden md:flex w-full items-center justify-between">
 
         {/* Logo */}
-        <Link to={"/"} className="flex items-center gap-2">
+        <Link to={"/home"} className="flex items-center gap-2">
           <img src={Logo} className="w-10 object-cover" alt="Logo" />
           <p className="text-headingColor text-xl font-bold">City</p>
         </Link>
@@ -63,15 +63,13 @@ import { useStateValue } from "../context/StateProvider";
             exit={{opacity: 0, x: 200}} 
             className="flex items-center gap-8"
           >
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+            <Link to="/home" className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Home
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
-              Menu
-            </li>
-            <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
+            </Link>
+            <Link to="/about" className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               About Us
-            </li>
+            </Link>
+            
             <li className="text-base text-textColor hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer">
               Services
             </li>
