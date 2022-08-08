@@ -9,7 +9,7 @@ import MyHome from "./components/MyHome";
 import About from "./components/About";
 
 function App() {
-  const [{ foodItems }, dispatch] = useStateValue();
+  const [dispatch] = useStateValue();
 
   const fetchData = async () => {
     await getAllFoodItems().then(data => {
@@ -22,7 +22,7 @@ function App() {
 
   useEffect(() => {
     fetchData();
-  }, [])
+  })
 
   return (
     <AnimatePresence exitBeforeEnter>
